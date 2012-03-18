@@ -1,0 +1,20 @@
+select 
+  application_handle,
+  total_wait_time,
+    agent_wait_time,
+    wlm_queue_time_total,
+    lock_wait_time,
+    log_buffer_wait_time,
+    log_disk_wait_time,
+    tcpip_recv_wait_time,
+    tcpip_send_wait_time,
+    ipc_recv_wait_time,
+    ipc_send_wait_time,
+    fcm_recv_wait_time,
+    fcm_send_wait_time,
+    pool_read_time,
+    pool_write_time,
+    direct_read_time,
+    direct_write_time
+from table(mon_get_unit_of_work(null,-1)) as x
+;

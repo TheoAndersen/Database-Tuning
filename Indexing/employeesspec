@@ -1,0 +1,17 @@
+/ Specification file for the employee table
+/ ssnum integer not null (can be defined as primary key)
+/ name varchar(20) not null
+/ lat real
+/ long real
+/ hundreds1 real
+/ hundreds2 real
+/
+/ python gentable.py 1000000 employees.data employeesspec 1
+
+
+n 1.0
+name 0.9
+n 0.7
+n 0.7
+n 100.0
+n 100.0

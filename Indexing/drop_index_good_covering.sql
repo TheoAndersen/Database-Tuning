@@ -1,0 +1,1 @@
+drop index nc4
