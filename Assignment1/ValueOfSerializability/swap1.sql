@@ -1,3 +1,3 @@
-select balance from accounts where numb = ? for update;
+select balance from accounts where number = ? for update;
 
 

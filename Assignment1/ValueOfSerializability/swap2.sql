@@ -1,3 +1,3 @@
-update accounts set balance = ? where numb = ?;
+update accounts set balance = ? where number = ?;
 
 
