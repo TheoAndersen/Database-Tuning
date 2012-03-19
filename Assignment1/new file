@@ -1,0 +1,4 @@
+db2 "get database configuration"
+
+
+db2 "update db cfg using cur_commit disabled"
