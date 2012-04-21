@@ -54,7 +54,7 @@ def write(q,data):
     # Connect to DB
     conn = ibm_db.pconnect(DATABASE, USERNAME, PASSWORD)
     if conn is None: raise Usage(ibm_db.conn_errormsg())
-    ibm_db.autocommit(ibm_db.SQL_AUTOCOMMIT_OFF)
+    ibm_db.autocommit(conn, ibm_db.SQL_AUTOCOMMIT_OFF)
     # Set isolation level
     ret = ibm_db.exec_immediate(conn, "SET CURRENT ISOLATION = "+ISOL_LEVEL)
     if TL:
@@ -87,7 +87,7 @@ def update1(q):
     # Connect to DB
     conn = ibm_db.pconnect(DATABASE, USERNAME, PASSWORD)
     if conn is None: raise Usage(ibm_db.conn_errormsg())
-    ibm_db.autocommit(ibm_db.SQL_AUTOCOMMIT_OFF)
+    ibm_db.autocommit(conn, ibm_db.SQL_AUTOCOMMIT_OFF)
     # Set isolation level
     ret = ibm_db.exec_immediate(conn, "SET CURRENT ISOLATION = "+ISOL_LEVEL)
     if TL:

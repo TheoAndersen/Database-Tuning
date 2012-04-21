@@ -1,0 +1,11 @@
+/ Specification file for the account table
+/ number 	integer not null primary key
+/ branchnum integer not null
+/ balance   float not null
+/
+/ python gentable.py 1000000 account.data accountspec 1
+n 1.0 100000
+n 100.0
+n 30000.0
+
+
