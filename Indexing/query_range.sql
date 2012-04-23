@@ -1,1 +1,1 @@
-select ssnum,name from employees where hundreds2 > 10;
+select ssnum,name from employees where hundreds2 < 25;

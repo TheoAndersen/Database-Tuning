@@ -1,0 +1,1 @@
+runstats on table db2inst1.employees for indexes all
